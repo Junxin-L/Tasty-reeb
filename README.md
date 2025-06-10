@@ -24,8 +24,8 @@ The Reeb Graph Crossing Number problem is a graph-theoretical problem that invol
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
-cd [repository-name]
+git clone https://github.com/Junxin-L/Tasty-reeb
+cd Tasty-reeb
 ```
 
 2. Install the required dependencies:
