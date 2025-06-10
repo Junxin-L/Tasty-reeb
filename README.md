@@ -88,5 +88,6 @@ V_levels, edges = generate_refined_reeb_graph(num_layers=4, layer_width=4, seed=
 - `rgcn_opsolver.py`: Implementation of the optimized solver
 - `reeb_gen.py`: Reeb graph generation utilities
 - `plot_benchmark_vary.py`: Benchmarking and plotting utilities
+- `reeb_visual.py`: Utility for visualizing Reeb graphs from JSON input files. It uses matplotlib and networkx to draw the graph and can save the visualization as PNG and PDF files.
 
 
