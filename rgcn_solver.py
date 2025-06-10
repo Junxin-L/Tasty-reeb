@@ -112,7 +112,7 @@ if __name__ == '__main__':
         {
             "name": "Test C: Partial crossings allowed",
             "V": list(range(6)),
-            "edges": [(0, 3), (0, 5), (1, 4), (1, 5), (2, 3), (2, 5)],
+            "edges": [(0, 3), (0, 5), (1, 4), (2, 3), (2, 5)],
             "levels": {0: 0, 1: 0, 2: 0, 3: 1, 4: 1, 5: 1},
             "k": 1,
             "expect_sat": True
@@ -120,10 +120,26 @@ if __name__ == '__main__':
         {
             "name": "Test C': 3 crosses",
             "V": list(range(6)),
-            "edges": [(0, 3), (0, 5), (1, 4), (1, 5), (2, 3), (2, 5)],
+            "edges": [(0, 3), (0, 5), (1, 4), (2, 3), (2, 5)],
             "levels": {0: 0, 1: 0, 2: 0, 3: 1, 4: 1, 5: 1},
             "k": 0,
             "expect_sat": False
+        },
+        {
+            "name": "Test D: ",
+            "V": list(range(6)),
+            "edges": [(0, 3), (0, 2), (1, 2), (1, 3), (2, 5),(3, 4)],
+            "levels": {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2},
+            "k": 0,
+            "expect_sat": False
+        },
+        {
+            "name": "Test D': ",
+            "V": list(range(6)),
+            "edges": [(0, 3), (0, 2), (1, 2), (1, 3), (2, 5),(3, 4)],
+            "levels": {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2},
+            "k": 1,
+            "expect_sat": True
         },
     ]
 
